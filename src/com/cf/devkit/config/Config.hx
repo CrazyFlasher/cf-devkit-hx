@@ -5,7 +5,7 @@ import com.cf.devkit.enums.AssetQuality;
 import com.cf.devkit.trace.Trace;
 import haxe.ds.ReadOnlyArray;
 
-class CasinoConfig implements ICasinoConfig
+class Config implements IConfig
 {
     public var singleWinHighLightDuration(get, never):Float;
     public var allWinsHighLightDuration(get, never):Float;

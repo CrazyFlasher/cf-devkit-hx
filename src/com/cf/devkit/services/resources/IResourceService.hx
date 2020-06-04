@@ -1,5 +1,6 @@
 package com.cf.devkit.services.resources;
 
+import com.cf.devkit.services.resources.ResourceService;
 import openfl.display.BitmapData;
 
 interface IResourceService extends IResourceServiceImmutable extends IService

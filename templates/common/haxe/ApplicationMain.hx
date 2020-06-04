@@ -7,8 +7,8 @@ import haxe.macro.Expr;
 #end
 
 #if (js && html5)
-import com.cf.casino.enums.AssetQuality;
-import com.cf.casino.utils.AssetQualityUtils;
+import com.cf.devkit.enums.AssetQuality;
+import com.cf.devkit.utils.AssetQualityUtils;
 #end
 
 @:access(lime.app.Application)

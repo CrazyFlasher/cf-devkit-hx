@@ -6,7 +6,7 @@ import com.cf.devkit.models.pause.IPauseModelImmutable;
 import com.cf.devkit.services.stats.IStatsService;
 import com.cf.devkit.models.pause.IPauseModel;
 import com.cf.devkit.services.resources.IResourceService;
-import com.cf.devkit.config.ICasinoConfig;
+import com.cf.devkit.config.IConfig;
 import com.cf.devkit.bundle.ITextField;
 import com.cf.devkit.bundle.IMovieClip;
 import com.cf.devkit.bundle.IContainer;
@@ -39,7 +39,7 @@ class BaseContext extends AbstractContext implements IBaseContext
     private var screenResizer:ScreenResizer;
     private var safeArea:Rectangle = new Rectangle();
 
-    private var casinoConfig:ICasinoConfig;
+    private var casinoConfig:IConfig;
 
     @Inject("window")
     private var window:openfl.display.DisplayObjectContainer;
@@ -130,12 +130,12 @@ class BaseContext extends AbstractContext implements IBaseContext
 
     private function createConfig():Void
     {
-        casinoConfig = modelFactory.getInstance(ICasinoConfig);
+        casinoConfig = modelFactory.getInstance(IConfig);
 
-        modelFactory.mapToValue(ICasinoConfig, casinoConfig);
-        mediatorFactory.mapToValue(ICasinoConfig, casinoConfig);
-        viewFactory.mapToValue(ICasinoConfig, casinoConfig);
-        factory.mapToValue(ICasinoConfig, casinoConfig);
+        modelFactory.mapToValue(IConfig, casinoConfig);
+        mediatorFactory.mapToValue(IConfig, casinoConfig);
+        viewFactory.mapToValue(IConfig, casinoConfig);
+        factory.mapToValue(IConfig, casinoConfig);
     }
 
     private function createModels():Void

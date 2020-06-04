@@ -4,7 +4,7 @@ import com.cf.devkit.enums.AssetQuality;
 import haxe.ds.ReadOnlyArray;
 import hex.di.IInjectorContainer;
 
-interface ICasinoConfig extends IInjectorContainer
+interface IConfig extends IInjectorContainer
 {
     /**
     * Id list of mistery symbols that should be replaced.

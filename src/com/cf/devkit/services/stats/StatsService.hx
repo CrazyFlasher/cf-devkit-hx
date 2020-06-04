@@ -4,9 +4,9 @@ import com.cf.devkit.display.Stage;
 import openfl.Lib;
 
 #if !useStarling
-    import openfl.events.Event;
+import openfl.events.Event;
 #else
-    import starling.events.Event;
+import starling.events.Event;
 #end
 
 @:keep

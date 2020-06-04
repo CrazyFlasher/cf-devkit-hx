@@ -1,7 +1,7 @@
 package com.cf.devkit.bundle.impl.starling.flump;
 
 #if useStarling
-import com.cf.devkit.config.ICasinoConfig;
+import com.cf.devkit.config.IConfig;
 import starling.utils.Align;
 import com.domwires.core.factory.IAppFactory;
 import com.cf.devkit.bundle.IMovieClip;
@@ -21,7 +21,7 @@ class FlumpMovieClip extends StarlingContainer implements IMovieClip implements 
 {
     @Inject
     @Optional
-    private var config:ICasinoConfig;
+    private var config:IConfig;
 
     @Inject("bundleId")
     private var bundleId:String;

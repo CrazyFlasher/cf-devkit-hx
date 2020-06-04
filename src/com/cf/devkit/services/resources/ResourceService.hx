@@ -1,7 +1,7 @@
 package com.cf.devkit.services.resources;
 
 import com.cf.devkit.enums.AssetQuality;
-import com.cf.devkit.config.ICasinoConfig;
+import com.cf.devkit.config.IConfig;
 import com.cf.devkit.bundle.IDisplayObject;
 import starling.core.Starling;
 import com.cf.devkit.bundle.ISheetClip;
@@ -39,7 +39,7 @@ import flump.display.LibraryLoader;
 class ResourceService extends AbstractService implements IResourceService
 {
     @Inject
-    private var config:ICasinoConfig;
+    private var config:IConfig;
 
     @Inject("modelFactory")
     private var modelFactory:IAppFactory;

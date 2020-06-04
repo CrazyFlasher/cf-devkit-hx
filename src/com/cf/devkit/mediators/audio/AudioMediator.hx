@@ -4,7 +4,7 @@ import com.cf.devkit.models.pause.PauseState;
 import com.cf.devkit.models.pause.PauseModelMessageType;
 import com.cf.devkit.models.pause.IPauseModelImmutable;
 import com.domwires.core.mvc.message.IMessage;
-import com.cf.devkit.config.ICasinoConfig;
+import com.cf.devkit.config.IConfig;
 import com.cf.devkit.mediators.audio.AudioNode;
 import com.cf.devkit.mediators.BaseMediator;
 import com.cf.devkit.tween.ITween;
@@ -13,7 +13,7 @@ import haxe.Timer;
 class AudioMediator extends BaseMediator implements IAudioMediator
 {
     @Inject
-    private var config:ICasinoConfig;
+    private var config:IConfig;
 
     @Inject
     private var pauseModel:IPauseModelImmutable;
