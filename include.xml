@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension>
+
+    <meta title="${title}" package="${package}" version="1.0.0" company="${company}"/>
+
+    <define name="webgl1"/>
+    <define name="windowWidth" value="1280"/>
+    <define name="windowHeight" value="720"/>
+    <define name="textFiles" value="|*.json|*.atlas|*.xml|*.pex"/>
+
+    <window hardware="true"/>
+<!--    <window if="html5" fps="10" background="0" vsync="true" antialiasing="0"/>-->
+    <window if="html5" fps="0" background="0" color-depth="16"/>
+    <window if="mobile" fps="60" fullscreen="true" width="${windowWidth}" height="${windowHeight}" allow-shaders="true"
+            require-shaders="true" depth-buffer="true" stencil-buffer="true" vsync="true"/>
+
+    <architecture name="arm64" if="android"/>
+
+    <haxelib name="openfl" version="8.9.6"/>
+    <haxelib name="lime" version="7.7.0"/>
+    <haxelib name="starling" if="useStarling"/>
+    <haxelib name="starling-spine-hx" if="useStarling"/>
+    <haxelib name="flump-starling" if="useStarling"/>
+    <haxelib name="zame-particles" unless="useStarling"/>
+    <haxelib name="spritesheet" unless="useStarling"/>
+    <haxelib name="mobile-detect-haxe"/>
+
+    <template path="templates/common"/>
+
+    <source path="override"/>
+
+</extension>

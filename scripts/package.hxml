@@ -1,0 +1,3 @@
+#-cmd haxelib deleterepo
+scripts/resolve-libs.hxml
+scripts/build.hxml

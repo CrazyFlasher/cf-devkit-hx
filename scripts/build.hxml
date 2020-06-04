@@ -1,0 +1,4 @@
+-cmd haxelib run hxp ./scripts/hx/CleanOutput.hx
+-cmd haxelib run munit test ./scripts/test-ci.hxml -v
+-cmd haxe scripts/docs.hxml -xml build/js.xml
+-cmd haxelib run dox -i build -o export/docs --toplevel-package com

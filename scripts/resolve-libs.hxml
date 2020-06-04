@@ -1,0 +1,27 @@
+-cmd haxelib newrepo
+-cmd haxelib --always install lime 7.7.0
+-cmd haxelib --always install openfl 8.9.6
+-cmd haxelib --always install munit
+-cmd haxelib --always git zame-particles https://github.com/CrazyFlasher/zame-haxe-particles.git 992761cf500db8e005900ebf18f8219cf99a6e5e
+-cmd haxelib --always git hamcrest https://github.com/mikestead/hamcrest-haxe.git master src
+-cmd haxelib --always install feathersui 1.0.0-alpha.1
+-cmd haxelib --always git spritesheet https://github.com/CrazyFlasher/spritesheet.git 08f7987b2f069efb7a5a1d40463ee43ff0239145
+#commit from 3.7 branch
+-cmd haxelib --always git spine-hx https://github.com/jeremyfa/spine-hx.git 365b6ca77e33d0f3a9417ea8d8466b5a8be23c9c
+-cmd haxelib --always git openfl-spine https://github.com/CrazyFlasher/openfl-spine.git 681c9fd9f7399489c0c6ed29fa77f15482028bef
+-cmd haxelib --always install DomWires 1.0.0-alpha.13
+-cmd haxelib --always install dox
+-cmd haxelib --always install hxnodejs
+-cmd haxelib --always install hxp 1.1.4
+-cmd haxelib --always git flump https://github.com/CrazyFlasher/flump.git textFields
+-cmd haxelib --never install flump-starling 1.0.8
+-cmd haxelib --always git starling https://github.com/CrazyFlasher/starling.git 51b9743ddfd361ead4400f87734f66138fb9896f
+-cmd haxelib --always git ta-gen https://github.com/CrazyFlasher/ta-gen.git 94787cda3f264e4537904a6e1f57f78083462161
+-cmd haxelib --always git starling-spine-hx https://github.com/CrazyFlasher/starling-spine-hx.git 5143f57282a7c9499bacd6f90ea70fd9613ab6a0
+-cmd haxelib --always git dragonbones https://github.com/CrazyFlasher/dragonbones.git 2b8a9a7a907d7bb11bea655484b4f21372f33086
+-cmd haxelib --always git away3d https://github.com/openfl/away3d.git 7d0b4d69e51f66fdf94f7d6106336c158059b250
+-cmd haxelib --always install starling-extensions-hx 1.0.1
+-cmd haxelib --always install mobile-detect-haxe 0.0.1
+-cmd haxelib --always install format 3.5.0
+-cmd haxelib --always git actuate https://github.com/CrazyFlasher/actuate.git bbf7209cf9db1084738c71413192a646b707db38
+-cmd haxelib run hxp scripts/hx/utils/SetupIML.hx

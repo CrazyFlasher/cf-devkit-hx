@@ -1,0 +1,27 @@
+-lib munit
+-lib hamcrest
+-lib dox
+-lib openfl
+-lib DomWires
+-lib actuate
+-lib openfl-spine
+-lib spine-hx
+-lib lime
+-lib spritesheet
+-lib feathersui
+-lib starling
+-lib dragonbones
+-lib flump-starling
+-lib starling-spine-hx
+-lib zame-particles
+-lib mobile-detect-haxe
+-lib format
+-lib starling-extensions-hx
+-cp src
+-D doc-gen
+--remap flash:openfl
+-xml build/js.xml
+--macro include('com.cf')
+--no-output
+--interp
+-D useStarling

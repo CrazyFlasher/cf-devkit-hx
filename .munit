@@ -1,0 +1,6 @@
+version=2.3.4
+src=test
+bin=build
+report=export/report
+hxml=test.hxml
+classPaths=src

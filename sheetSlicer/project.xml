@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+
+    <define name="webgl1"/>
+
+    <meta title="SheetSlicer" package="com.casinohx.slicer" version="1.0.0" company="Company Name" />
+    <app main="Main" file="SheetSlicer" />
+
+    <app path="./export"/>
+
+    <window background="0"/>
+
+    <source path="src" />
+
+    <haxelib name="openfl" version="8.9.6"/>
+    <haxelib name="spritesheet"/>
+
+    <assets path="assets" embed="true" preload="true"/>
+
+</project>

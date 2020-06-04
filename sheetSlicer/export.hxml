@@ -1,0 +1,1 @@
+-cmd haxelib run openfl test project.xml neko -debug
