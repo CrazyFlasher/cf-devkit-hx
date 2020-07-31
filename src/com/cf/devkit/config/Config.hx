@@ -7,12 +7,6 @@ import haxe.ds.ReadOnlyArray;
 
 class Config implements IConfig
 {
-    public var singleWinHighLightDuration(get, never):Float;
-    public var allWinsHighLightDuration(get, never):Float;
-    public var iterateWinsWhileHighlightingAll(get, never):Bool;
-    public var pauseDuringBigWin(get, never):Bool;
-    public var winCountUpDuration(get, never):Float;
-
     public var basePath(get, never):String;
     private var _basePath:String = "assets/";
 
@@ -24,9 +18,6 @@ class Config implements IConfig
 
     public var assetsQuality(get, never):AssetQuality;
     private var _assetsQuality:AssetQuality;
-
-    public var mysterySymbolIdList(get, never):ReadOnlyArray<Int>;
-    private var _mysterySymbolIdList:Array<Int> = [];
 
     @PostConstruct
     private function init():Void
@@ -63,35 +54,5 @@ class Config implements IConfig
     private function get_soundsPath():String
     {
         return _soundsPath;
-    }
-
-    private function get_mysterySymbolIdList():ReadOnlyArray<Int>
-    {
-        return _mysterySymbolIdList;
-    }
-
-    private function get_singleWinHighLightDuration():Float
-    {
-        return 1;
-    }
-
-    private function get_allWinsHighLightDuration():Float
-    {
-        return 2;
-    }
-
-    private function get_iterateWinsWhileHighlightingAll():Bool
-    {
-        return false;
-    }
-
-    private function get_pauseDuringBigWin():Bool
-    {
-        return false;
-    }
-
-    private function get_winCountUpDuration():Float
-    {
-        return 5;
     }
 }

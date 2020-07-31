@@ -62,20 +62,6 @@ class AudioMediator extends BaseMediator implements IAudioMediator
         super.addListeners();
 
         addMessageListener(PauseModelMessageType.PauseStateChanged, pauseStateChanged);
-//        addMessageListener(UIMediatorMessageType.MusicVolumeUpdate, onMusicVolumeUpdate);
-//        addMessageListener(UIMediatorMessageType.SoundVolumeUpdate, onSoundVolumeUpdate);
-    }
-
-    private function onMusicVolumeUpdate(m:IMessage):Void
-    {
-        var volume:Float = m.data.volume;
-        setMasterMusicVolume(volume);
-    }
-
-    private function onSoundVolumeUpdate(m:IMessage):Void
-    {
-        var volume:Float = m.data.volume;
-        setMasterSoundVolume(volume);
     }
 
     private var timer:Timer;
