@@ -39,7 +39,7 @@ class BaseContext extends AbstractContext implements IBaseContext
     private var screenResizer:ScreenResizer;
     private var safeArea:Rectangle = new Rectangle();
 
-    private var casinoConfig:IConfig;
+    private var appConfig:IConfig;
 
     @Inject("window")
     private var window:openfl.display.DisplayObjectContainer;
@@ -130,12 +130,12 @@ class BaseContext extends AbstractContext implements IBaseContext
 
     private function createConfig():Void
     {
-        casinoConfig = modelFactory.getInstance(IConfig);
+        appConfig = modelFactory.getInstance(IConfig);
 
-        modelFactory.mapToValue(IConfig, casinoConfig);
-        mediatorFactory.mapToValue(IConfig, casinoConfig);
-        viewFactory.mapToValue(IConfig, casinoConfig);
-        factory.mapToValue(IConfig, casinoConfig);
+        modelFactory.mapToValue(IConfig, appConfig);
+        mediatorFactory.mapToValue(IConfig, appConfig);
+        viewFactory.mapToValue(IConfig, appConfig);
+        factory.mapToValue(IConfig, appConfig);
     }
 
     private function createModels():Void
