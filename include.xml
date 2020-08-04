@@ -25,9 +25,7 @@
     <haxelib name="spritesheet" unless="useStarling"/>
     <haxelib name="mobile-detect-haxe"/>
 
-<!--    <template path="templates/common"/>-->
-    <template path="templates/sa" if="standAlone"/>
-    <template path="templates/web" unless="standAlone"/>
+    <template path="templates/common"/>
 
     <source path="override"/>
 
